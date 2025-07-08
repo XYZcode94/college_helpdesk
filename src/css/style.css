@@ -26,6 +26,7 @@ body {
   --highlight: #EB8A90;
   --dark: #6457A6;
   --heading: #88adda;
+  --active: #ff0000;
 }
 
 /* ===== HEADER ===== */
@@ -62,16 +63,16 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: var(--highlight);
+  color: var(--active);
 }
 
 /* ===== HERO ===== */
 .hero {
-  background:  url(/src/img/background.jpg),linear-gradient(120deg, var(--primary), var(--dark));
+  background:  url(/src/img/background.jpg);
   background-position: center;
   background-size: cover;
   color: white;
