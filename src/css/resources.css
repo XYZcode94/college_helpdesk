@@ -1,0 +1,88 @@
+/* Add this to your CSS file */
+html {
+    scroll-behavior: smooth;
+}
+
+/* If you have a fixed header, add this */
+section {
+    scroll-margin-top: 80px;
+    /* adjust based on your header height */
+}
+
+.student-resources {
+    padding: 60px 20px;
+    background: #f7f7f2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2% 8%;
+}
+
+.student-resources h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #6457a6;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 10px 20px;
+}
+
+.resource-card {
+    background: white;
+    border: 2px solid #21897e;
+    padding: 25px 15px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card i {
+    font-size: 2.5rem;
+    color: #eb8a90;
+    margin-bottom: 15px;
+}
+
+.resource-card h3 {
+    color: #21897e;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Detailed section styles */
+.resource-detail {
+    margin: 60px auto;
+    max-width: 900px;
+    padding: 30px 20px;
+    border-top: 3px solid #6457a6;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.resource-detail h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #21897e;
+}
+
+.resource-detail p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
